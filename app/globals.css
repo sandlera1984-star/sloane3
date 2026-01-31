@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-cream text-plum min-h-screen;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.bg-site {
+  @apply bg-gradient-to-br from-blush via-cream to-lavender;
+}
+
+.card-surface {
+  @apply bg-cream/90 border border-fuchsia/40 shadow-soft rounded-3xl;
+}
+
+.btn-primary {
+  @apply rounded-full bg-plum px-6 py-3 text-cream font-semibold shadow-soft transition hover:bg-fuchsia;
+}
+
+.btn-secondary {
+  @apply rounded-full bg-fuchsia px-6 py-3 text-cream font-semibold shadow-soft transition hover:bg-plum;
+}
+
+.btn-outline {
+  @apply rounded-full border border-plum px-6 py-3 text-plum font-semibold hover:bg-plum hover:text-cream transition;
+}
+
+.text-accent {
+  @apply text-fuchsia;
+}
+
+.link-pill {
+  @apply rounded-full border border-fuchsia/50 px-4 py-2 text-sm font-semibold text-plum hover:bg-fuchsia hover:text-cream transition;
+}
+
+.input-field {
+  @apply w-full rounded-2xl border border-fuchsia/40 bg-white/80 px-4 py-3 text-plum focus:border-plum focus:outline-none;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-plum/40 backdrop-blur-sm flex items-center justify-center z-50;
+}
+
+.popup-circle {
+  width: 260px;
+  height: 260px;
+  @apply rounded-full bg-plum text-fuchsia flex items-center justify-center text-center text-xl font-semibold shadow-soft relative;
+}
